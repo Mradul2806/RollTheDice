@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    /* background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c); */
+    background-color: #376f97ee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+ul {
+    list-style: none;
+}
+
+.main {
+    width: 400px;
+    /* background: linear-gradient(#e66465, #9198e5); */
+    background-color: #d0d7fbc3;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    color: black;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: 600;
+    color: #813b2a;
+}
+
+.dice-container {
+    font-size: 100px;
+    margin: -20px 0;
+}
+
+.dice-rolling-animation {
+    animation: rolling 1s forwards;
+}
+
+    @keyframes rolling {
+    0% {
+        transform: rotateZ(0) rotateY(0);
+    }
+    100% {
+        transform: rotateZ(360deg) rotateY(360deg);
+    }
+}
+
+.roll-button {
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: white;
+    background-color: #0b2cd1c3;
+    cursor: pointer;
+}
+
+.roll-button:active {
+    transform: scale(0.95);
+}
+
+.history-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #08788c5c;
+    margin: 10px 0;
+    padding: 0 15px;
+    border-radius: 10px;
+    color: #1C3334;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.history-item span {
+    font-weight: 400;
+    font-size: 50px;
+}
